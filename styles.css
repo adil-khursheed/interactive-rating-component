@@ -19,6 +19,17 @@
     font-family: 'Overpass', sans-serif;
 }
 
+h1{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+p{
+    color: var(--medium-grey);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
 body{
     min-height: 100vh;
     background-color: var(--very-dark-blue);
@@ -33,27 +44,110 @@ body{
     max-width: 380px;
     background-color: var(--medium-dark-blue);
     border-radius: 20px;
-    padding: 1.5rem;
+    padding: 1.8rem;
 }
 
 .star-icon img{
     background-color: var(--dark-blue);
     padding: 0.8rem;
     border-radius: 50%;
-    width: 40px;
     margin-bottom: 1.5rem;
 }
 
 .review-title{
-    color: var(--white);
-    font-size: 1.7rem;
     margin-bottom: 0.6rem;
 }
 
 .review-para{
-    color: var(--medium-grey);
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.5;
     margin-bottom: 1.5rem;
+}
+
+.rating-btn{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.btn{
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding-top: 3px;
+    background-color: var(--dark-blue);
+    color: var(--medium-grey);
+    font-weight: 700;
+    font-size: 1.025rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn:active,
+.btn:focus{
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 0.9rem 0 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-btn:hover,
+.submit-btn:focus,
+.submit-btn:active{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.thanks-img img{
+    display: block;
+    margin: 0 auto 1.8rem;
+}
+
+.review-msg,
+.thanks-title,
+.thanks-msg{
+    text-align: center;
+}
+
+.review-msg{
+    width: 50%;
+    display: block;
+    background-color: var(--dark-blue);
+    margin: 0 auto 2rem;
+    padding: 0.3rem 0 0.2rem;
+    border-radius: 60px;
+}
+
+.review-msg p{
+    color: var(--orange);
+}
+
+.thanks-title,
+.thanks-msg{
+    margin-bottom: 1rem;
+}
+
+footer{
+    margin: 1rem 0;
+    color: var(--medium-grey);
+}
+
+.hidden{
+    display: none;
 }
