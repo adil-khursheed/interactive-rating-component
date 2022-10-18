@@ -128,7 +128,7 @@ body{
 }
 
 .review-msg{
-    width: 50%;
+    width: 60%;
     display: block;
     background-color: var(--dark-blue);
     margin: 0 auto 2rem;
@@ -138,6 +138,7 @@ body{
 
 .review-msg p{
     color: var(--orange);
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
 
 .thanks-title,
@@ -152,4 +153,13 @@ footer{
 
 .hidden{
     display: none;
+}
+
+
+@media only screen and (max-width: 360px){
+    .btn{
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
 }
